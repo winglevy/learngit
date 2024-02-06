@@ -1,3 +1,1 @@
-This is recording the most import usage of git.
-# learngit
-# learngit
+This is recording the most import usage of git！
