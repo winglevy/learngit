@@ -41,6 +41,8 @@ git remote -v
 git remote add origin git@github.com:michaelliao/learngit.git
 # 远程推送(先本地后远程)
 git push -u origin master # -u第一次关联起来
+git push origin master # 之后
+# 每个项目中git init 设置remote都是独立的
 # 远程下载(先远程后本地)
 git clone git@github.com:michaelliao/gitskills.git
 ```
