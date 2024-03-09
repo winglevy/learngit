@@ -147,3 +147,13 @@ git config --global alias.br branch
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
+
+
+##### git意外
+
+
+
+无法合并分支：
+	远程分支名main
+	本地直接添加了分支名master，之后直接推送 —— 此时远程有两个分支，本地推送了一个，不匹配
+	克隆远程到本地，重新修改在推送
