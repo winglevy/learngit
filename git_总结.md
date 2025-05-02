@@ -60,6 +60,8 @@ Host github.com
 ```bash
 git config --global user.name "wzt"
 git config --global user.email "2318914031@qq.com"
+
+# 查看全局用户信息
 git config --global --list
 ```
 
@@ -75,27 +77,40 @@ cd learngit
 git init
 ```
 
+
+
 ***本地仓库***
 
 ```bash
 # 版本管理
 ```
 
-***github仓库***
+
+
+***github远程仓库***
 
 ```bash
 # 密钥配置
 ssh-keygen -t rsa -C "winglevy" # github上名字
+
+# 云端账户需要添加用户密匙才能确认身份
+
+# 用户密匙添加后仍然无法使用ssh推送，可能是ssh的网络端口使用出了问题，参见上面理解git部分的处理办法
 ```
+
+
 
 ```bash
 # 远程仓库
 git remote -v
 git remote add origin git@github.com:michaelliao/learngit.git
+
 # 远程推送(先本地后远程)
 git push -u origin master # -u第一次关联起来
 git push origin master # 之后
+
 # 每个项目中git init 设置remote都是独立的
+
 # 远程下载(先远程后本地)
 git clone git@github.com:michaelliao/gitskills.git
 ```
@@ -114,15 +129,19 @@ git diff readme.md
 git diff HEAD -- readme.txt  # 比较工作区和仓库
 git checkout -- readme.txt  # 1未暂存-直接回复上次提交 2暂存-恢复上次暂存后
 git rm readme.md && git commit -m "remove readme.md"  # 本地仓库中删除
+
 ## 分支
 git status
+
 ## 历史命令
 git log --pretty=oneline # 显示版本号
 git log --graph --pretty=oneline --abbrev-commit
 git reflog
+
 ## 版本切换
 git reset --hard HEAD^ # 前一个，往后没有快捷设置
 git reset --hard <版本号>
+
 ## 存储(覆盖删除)：工作-直接，暂存-add，仓库-commit，远程-push
 
 ```
