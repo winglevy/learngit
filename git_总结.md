@@ -1,3 +1,34 @@
+##### 理解git
+
+
+
+1、git的基本设置
+
+创建：git init
+
+
+
+2、git保密设置
+
+ssh：通过本地创建ssh密匙，登陆后需要在云端添加密码
+
+ssh网络端口问题：有密码却无法连接账户进行clone或者push的情形，需要设置.ssh/config使用合适的网络端口
+
+```
+# 编辑ssh配置文件
+vim ~/.ssh/config
+
+# 在文件中添加以下内容
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+  User git
+  IdentityFile ~/.ssh/id_rsa  # 替换为你的私钥路径
+
+```
+
+
+
 
 
 
