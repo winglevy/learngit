@@ -143,7 +143,7 @@ git reset --hard HEAD^ # 前一个，往后没有快捷设置
 git reset --hard <版本号>
 
 ## 存储(覆盖删除)：工作-直接，暂存-add，仓库-commit，远程-push
-
+git rm -r # 删除文件夹，--cached缓存区中删但本地保留(.gitignore)
 ```
 
 
@@ -188,6 +188,8 @@ git push origin v1.0
 git push origin --tags  # 全部标签
 ```
 
+
+
 ##### git设置
 
 ```bash
@@ -206,6 +208,8 @@ build
 # My configurations:
 db.ini
 deploy_key_rsa
+
+
 ## 忽略后操作
 git add -f App.class  # 强制添加
 git check-ignore -v App.class  #查看为什么不能添加
