@@ -148,6 +148,20 @@ git rm -r # 删除文件夹，--cached缓存区中删但本地保留(.gitignore)
 
 
 
+##### git上传
+
+
+
+```
+git remote set-url origin git@github.com:wangztmw/WORK-excel.git
+```
+
+
+
+
+
+
+
 ##### 分支管理
 
 ~~
